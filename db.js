@@ -1,2 +1,8 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/soppolecy', { useMongoClient: true });
+var mongoose = require("mongoose");
+
+const uri = "mongodb+srv://public:Welcome123@cluster0.oe59k.mongodb.net/gebrak_app?retryWrites=true&w=majority";
+mongoose.connect(uri, { 
+    useNewUrlParser: true, 
+    useUnifiedTopology: true,
+    useFindAndModify: false
+});

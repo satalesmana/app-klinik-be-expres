@@ -19,10 +19,10 @@ app.get('/api', function (req, res) {
   res.status(200).send('API works.');
 });
 
-var UserController = require(__root + 'user/UserController');
+var UserController = require(__root + 'app/user/UserController');
 app.use('/api/users', UserController);
 
-var AuthController = require(__root + 'auth/AuthController');
+var AuthController = require(__root + 'app/auth/AuthController');
 app.use('/api/auth', AuthController);
 
 module.exports = app;
